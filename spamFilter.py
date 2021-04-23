@@ -36,6 +36,7 @@ print(y_train.values)
 
 #Evaluate the model on the training data set
 print("Evaluate the model on the training data set")
+print()
 prediction = classifier.predict(X_train)
 print(classification_report(y_train, prediction))
 print()
@@ -45,7 +46,7 @@ print('Accuracy : ', accuracy_score(y_train, prediction))
 print()
 
 #Evaluate the model on the Testing data set
-print("Evaluate the model on the training data set")
+print("Evaluate the model on the Testing data set")
 print()
 prediction = classifier.predict(X_test)
 print(classification_report(y_test, prediction))
